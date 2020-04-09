@@ -12,7 +12,7 @@
     <title>Marino Iunes</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon2.jpg" width="50px" height="50px">
+    <link rel="icon" href="img/core-img/favicon2.png" width="500px">
 
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet">
@@ -51,7 +51,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                                 </ul>
                                 <div class="sing-up-button d-lg-none">
-                                    <a href="#">Cotiza</a>
+                                    <a href="#contacto">Cotiza</a>
                                 </div>
                             </div>
                         </nav>
@@ -60,7 +60,7 @@
                 <!-- Signup btn -->
                 <div class="col-12 col-lg-2">
                     <div class="sing-up-button d-none d-lg-block">
-                        <a href="#">Cotiza</a>
+                        <a href="#contact">Cotiza</a>
                     </div>
                 </div>
             </div>
@@ -421,8 +421,8 @@
                 </div>
                 <div class="col-md-6">
                     <!-- Form Start-->
-                    <div class="contact_from">
-                        <form action="#" method="post">
+                    <div class="contact_from" id="contacto">
+                        <form action="contactform.php" method="post">
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
@@ -434,24 +434,24 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="medidas" id="name" placeholder="Empresa" required>
+                                            <input type="text" class="form-control" name="mail" id="name" placeholder="Tu e-mail" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Tu E-mail" required>
+                                            <input type="email" class="form-control" name="subject" id="email" placeholder="Asunto" required>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Your Message *" required></textarea>
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mensaje *" required></textarea>
                                         </div>
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
-                                        <button type="submit" class="btn submit-btn">Enviar ahora</button>
+                                        <button type="submit" class="btn submit-btn" name="submit">Enviar ahora</button>
                                     </div>
                                 </div>
                             </div>
@@ -480,10 +480,10 @@
         <div class="footer-menu">
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestro Equipo</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
         </div>
